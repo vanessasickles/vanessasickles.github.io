@@ -9,10 +9,12 @@
 
 /* THINGS TO SHOUT AT JON ABOUT 
 
-- hover stopped working
 - resize + video being a little weird
 - scrollmagic
-- lower load times?
+- lower load times? how to optimize images and/or js?
+
+- cleaner code?
+
 */
 
 
