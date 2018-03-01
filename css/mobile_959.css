@@ -1,0 +1,227 @@
+/* Phone responsive */
+
+@media only screen and (max-width:450px) {
+	header {
+		width:100%;
+		height:90%;
+
+		font-size:35px;
+		text-align:left;
+
+		padding:10%;
+
+	}
+
+	header h1 {
+		font-size:60px;
+	}
+
+	#about .flexblock {
+		display:block;
+		padding-left:10%;
+	}
+
+	#about .c-zone {
+		width:75%;
+	}
+
+	#about .column {
+		width:100%;
+	}
+
+	#about ul {
+		padding:0;
+	}
+
+	#about h3 {
+		font-size:50px;
+	}
+
+/*	.hero {
+		width:100%;
+		height: 550px;
+	}
+*/
+	.hero {
+		display:none;
+	}
+
+	#work {
+		padding:0;
+	}
+
+	#work .c-zone {
+		width:100%;
+		padding:0;
+	}
+
+	#work .c-zone h2 {
+		font-size: 50px;
+		display:block;
+		color:#fff;
+		margin:0;
+	}
+
+	.button {
+		display:none;
+	}
+
+	.item {
+		width:100%;
+		margin:5px;
+	}
+
+	.desc {
+		font-size:20px;
+	}
+
+	.iname {
+		width:100%;
+		padding:10px 30px;
+		bottom:0px;
+		border-bottom: 6px solid #69b5ff;
+	}
+
+	.iname h3 {
+		font-size:25px;
+	}
+
+
+
+	.discord {
+		background-image:url('../images/discordpreview.png');
+		background-position:left;
+	}
+
+	#overfishing {
+		background-image:url('../images/overfishingpreview.png');
+		background-size:cover;
+		background-position:center;
+	}
+
+	footer .c-zone {
+		text-align:left;
+		width:85%;
+		font-size:24px;
+	}
+}
+
+
+
+
+
+
+/* iPad responsive */
+@media only screen and (max-width:768px) {
+	header {
+		width:100%;
+		height:90%;
+
+		font-size:35px;
+		text-align:left;
+
+		padding:10%;
+
+	}
+
+	header h1 {
+		font-size:60px;
+	}
+
+	#about .flexblock {
+		display:block;
+		padding-left:10%;
+	}
+
+	#about .c-zone {
+		width:75%;
+	}
+
+	#about .column {
+		width:100%;
+	}
+
+	#about ul {
+		padding:0;
+	}
+
+	#about h3 {
+		font-size:50px;
+	}
+
+	.hero {
+		display:none;
+	}
+
+	#work {
+		padding:0;
+	}
+
+	#work .c-zone {
+		width:80%;
+		padding-top:30px;
+	}
+
+	#work .c-zone h2 {
+		font-size: 50px;
+		display:block;
+		color:#fff;
+		margin:0;
+	}
+
+	.button {
+		display:none;
+	}
+
+	.item {
+		width:100%;
+		margin:5px;
+	}
+
+	.desc {
+		font-size:20px;
+	}
+
+	.iname {
+		width:100%;
+		padding:10px 30px;
+		bottom:0px;
+		border-bottom: 6px solid #69b5ff;
+	}
+
+	.iname h3 {
+		font-size:25px;
+	}
+
+
+	footer .c-zone {
+		text-align:left;
+		width:85%;
+		font-size:20px;
+	}
+
+
+}
+
+
+
+
+
+
+/* Inbetween */
+
+@media only screen and (max-width:1080px) {
+
+	.gallery {
+		justify-content:center;
+	}
+	.item {
+		width:85%;
+	}
+
+	footer .c-zone {
+		font-size:16px;
+	}
+
+
+}

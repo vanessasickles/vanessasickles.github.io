@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="An interactive designer based in St. Louis, MO.">
+	<meta name="keywords" content="web design, student, Maryville, interactive design">
+	<meta name="author" content="Vanessa Sickles">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<title>Vanessa Sickles</title>
+	<link href="css/index.css" rel="stylesheet" type="text/css">
+	<link href="css/mobile_959.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+		
+	<nav>
+		<ul>
+			<li><a href="#about">About</a></li>
+			<li><a href="#work">Work</a></li>
+		</ul>
+	</nav>
+
+
+	<header>
+		<div class="c-zone">
+			<div id="intro">
+			<p>Hello! I'm</p>
+				<h1>Vanessa Sickles</h1>
+				
+			<p>Feel free to stay awhile!</p>
+			</div>
+		</div>
+	</header>
+
+	<main>
+
+		<div id="about"><div class="c-zone">
+			<section class="s1">
+			<p>I'm a web developer preparing to enter my senior year at Maryville University. I will be graduating in Spring 2019. I'm a lover of all things code, and for me, there isn't a better rush than taking a concept and bringing it to a pixel-perfect, interactive reality.<Br><Br>
+			I'm fascinated with creating awesome experiences for users, and I am always trying to learn new languages and programs to help enhance those experiences.</p>
+			<h3>Programs</h3>
+				<div class="flexblock">
+					<div class="column"><ul>
+						<li style="border-left: 10px solid #00c8ff">Photoshop</li>
+						<li style="border-left: 10px solid #ff7c00">Illustrator</li>
+						<li style="border-left: 10px solid #ff3f94">InDesign</li>
+						<li style="border-left: 10px solid #d29aff">After Effects</li>
+						<li style="border-left: 10px solid #dc3622">Acrobat</li>
+					</ul></div>
+					<div class="column"><ul>
+						<li style="border-left: 10px solid #7fba00">Microsoft Suite</li>
+						<li style="border-left: 10px solid #4284f3">Google Drive</li>
+					</ul></div>
+				</div>
+			</section>
+
+			<section class="s2">
+			<h3>Languages</h3>
+				<div class="flexblock">
+					<div class="column"><ul>
+						<li style="border-left: 10px solid #e44d26">HTML</li>
+						<li style="border-left: 10px solid #2965f1">CSS</li>
+					</ul></div>
+					<div class="column"><ul>
+						<li style="border-left: 10px solid #f5de19">JavaScript</li>
+						<li style="border-left:10px solid #1b75bb">JQuery</li>
+					</ul></div>
+				</div>
+			</section>
+
+			<section class="s3">
+			<h3>Exploring</h3>
+				<div class="flexblock">
+					<div class="column"><ul><li style="border-left:10px solid #777bb3">PHP</li>
+					<li style="border-left:10px solid #f2a64b;">MySQL</li></ul></div>
+					<div class="column"><ul><li style="border-left:10px solid #21759b">WordPress</li></ul></div>
+				</div>
+			</section>
+
+
+		</div></div>
+
+		<div class="hero">
+			
+			<div class="latest"><span class="desc">Latest Work</span>
+			<h3>Circle of Light Associates</h3></div>
+
+		</div>
+
+		<section id="work">
+
+			<div class="c-zone">
+				<h2>My Work</h2>
+			
+
+			<div class="button show_all" onclick="show_all()">all</div>
+			<div class="button show_interactive">interactive</div>
+			<div class="button show_branding">branding</div>
+			<div class="button show_animation">animation</div>
+			</div>
+				<div class="gallery">
+					<div class="item animation discord">
+						<div class="iname"><span class="desc">Icon Animations</span>
+						<h3>Discord Nitro</h3></div>
+					</div>
+					<div class="item branding interactive" style="background-image:url('images/circleoflightpreview2.png');">
+						<div class="iname"><span class="desc">Non-profit Rebrand</span>
+						<h3>Circle of Light Associates</h3></div>
+					</div>
+					<div class="item branding" style="background-image:url('images/oldnorthpreview.png');">
+						<div class="iname"><span class="desc">Non-profit Brand</span>
+						<h3>Old North Glassworks</h3></div>
+					</div>
+					<div class="item animation">
+						<div id="overfishing" class="videocon"><video autoplay loop="true"><source src="images/overfishingpreview.mp4" type="video/mp4"></video></div>
+
+						<div class="iname"><span class="desc">Animation</span>
+						<h3>Overfishing</h3></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="c-zone">
+				Questions?<br>
+				<b>Get in touch at:</b> <a href="">Behance</a> • <a href="">LinkedIn</a><br>
+			© 2018 Vanessa Sickles •  <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a></p>
+			</div>
+			
+		</footer>
+	</main>
+
+	<!-- ============ scripts ============ -->
+	
+	<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+
+	<script type="text/javascript" src="js/master.js"></script>
+</body>
+
+</html>
