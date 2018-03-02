@@ -1,7 +1,6 @@
-// first scroll animation at 330: part list items
 
 // var controller = new ScrollMagic.Controller();
-// new ScrollMagic.Scene({triggerElement:'header'}).setClassToggle("nav ul li:nth-child(2)","lipart").addTo(controller);
+// new ScrollMagic.Scene({triggerElement:'#intro'}).setClassToggle("nav ul li:nth-child(1)","lipart").addTo(controller);
 
 
 
@@ -9,7 +8,7 @@
 
 /* THINGS TO ASK JON ABOUT
 
-- scrollmagic
+- scrollmagic thing above
 - lower load times? what's the best way to optimize images/js?
 
 - cleaner code? any way to organize code to look better to employers?
