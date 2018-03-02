@@ -7,13 +7,12 @@
 
 
 
-/* THINGS TO SHOUT AT JON ABOUT 
+/* THINGS TO ASK JON ABOUT
 
-- resize + video being a little weird
 - scrollmagic
-- lower load times? how to optimize images and/or js?
+- lower load times? what's the best way to optimize images/js?
 
-- cleaner code?
+- cleaner code? any way to organize code to look better to employers?
 
 */
 
@@ -63,13 +62,29 @@ $("nav a").click(function(){
 
 
 // HOVER ANIMATIONS
-$(".item").hover(
-	function(){
-		$(this).find(".iname").css({"padding-left": "150px"});},
+if ($(window).width() > 768) {
+	$(".item").hover(
+		function(){
+			$(this).find(".iname").css({"padding-left": "150px"});},
 
-	function(){
-		$(this).find(".iname").css({"padding-left":"20px"});}
-	);
+		function(){
+			$(this).find(".iname").css({"padding-left":"20px"});}
+		);
+	}
+
+$(window).resize(function() {
+	if ($(window).width() > 768) {
+	$(".item").hover(
+		function(){
+			$(this).find(".iname").css({"padding-left": "150px"});},
+
+		function(){
+			$(this).find(".iname").css({"padding-left":"20px"});}
+		);
+	}
+})
+
+
 
 $(".hero").hover(
 	function(){
@@ -122,4 +137,11 @@ $(".show_animation").click(function(){
 	$(".item.animation").show()
 });
 
+
+// Gallery item box click
+
+$(".item").click(function(){
+	window.location=$(this).find("a").attr("href");
+	return false;
+})
 

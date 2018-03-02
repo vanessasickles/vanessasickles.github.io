@@ -1,0 +1,260 @@
+@media only screen and (max-width:959px) {
+
+body {
+	margin-top:0px;
+	overflow-x:hidden;
+}
+
+nav {
+	background-color:#fff;
+	padding:0px;
+	height:90px;
+}
+
+	nav .c-zone {
+		width:100%;
+	}
+
+	#menu_btn {
+		display:block;
+		position:absolute;
+		right:5%;
+		top:20px;
+		z-index:500;
+	}
+
+	#logo {
+		/*display:none;*/
+		position:absolute;
+		top:20px;
+		left:10%;
+		width: 239px;
+		height:51px;
+		background-image:url('../images/logotext.svg');
+	}
+
+	nav ul {
+		width:100%;
+		display:none;
+		font-size:40px;
+		font-weight:500;
+		color:#fff;
+
+		box-shadow:0px 10px 1000px #000;
+	}
+
+	.show {
+		display:block;
+		height:100%;
+	}
+
+	nav ul .difference {
+		font-size:inherit;
+	}
+
+	nav li {
+		width:100%;
+		background-color:#595959;
+		padding:10px 10%;
+		margin:0;
+	}
+
+	nav li:hover {
+		background-color:#606060;
+	}
+
+
+
+header {
+	height:80%;
+}
+
+	header .c-zone {
+		width:100%;
+	}
+
+	header p {
+		font-size:22px;
+	}
+
+	.intro { 
+		width:80%;
+		margin-left:0;
+	 }
+
+#callto .c-zone {
+	display:block;
+	width:100%;
+}
+
+	#callto .column:nth-child(even) {
+		background-color:#f58726;
+	}
+
+	.column {
+		width:100%;
+		padding:40px 3%;
+	}
+
+	#callto .link {
+		font-size:23px;
+
+	}
+
+	#callto .pcon {
+		font-size:18px;
+	}
+
+	#callto b {
+		width:100%;
+		font-size:30px;
+	}
+
+#ourservices {
+	padding-bottom:250px;
+}
+
+#ourservices .c-zone {
+	width:100%;
+}
+
+#ourservices p {
+	font-size:20px;
+}
+
+#ourservices .c-zone .textcon {
+	display:block;
+	padding: 0 10%;
+}
+
+#ourservices .c-zone .textcon h2 {
+	text-align:center;
+	font-size:60px;
+}
+
+.servicecon {
+	width:100%;
+	justify-content:space-between;
+	margin:0;
+	margin-top:50px;
+}
+
+.servicebox {
+	width:49.5%;
+	min-width:200px;
+	pointer-events: none;
+	opacity:1;
+}
+
+.servicename {
+	font-size:20px;
+}
+
+
+.arch {
+	width:189px;
+	top:-183px;
+}
+
+
+footer {
+	margin-top:50px;
+}
+
+footer .c-zone {
+	width:80%;
+
+	display:flex;
+	justify-content:space-between;
+
+}
+
+footer .c-zone .con {
+	display:block;
+	width:50%;
+	
+}
+
+footer h4 {
+	text-align:left;
+	margin:0;
+	font-size:40px;
+}
+
+footer .c-zone .con {
+	margin-bottom:20px;
+	font-size:25px;
+}
+
+.image {
+	margin-top:20px;
+}
+
+
+
+}
+
+
+@media only screen and (max-width:1437px) {
+
+.servicename {
+	font-size:19px;
+	/*font-size:1.5vw*/
+}
+
+
+}
+
+
+@media only screen and (max-width:580px) {
+
+.servicecon {
+	width:100%;
+	justify-content:space-between;
+	margin:0;
+}
+
+.servicebox {
+	width:100%;
+	min-width:200px;
+}
+
+.servicename {
+	font-size:28px;
+}
+
+.arch {
+	width:189px;
+	top:-183px;
+}
+
+.cityscape {
+	width:300px;
+	top:-160px;
+}
+
+
+footer .c-zone {
+	display:block;
+}
+
+footer .c-zone .con {
+	width:100%;
+}
+
+footer h4 {
+	font-size:50px;
+	text-align:center
+}
+
+.image {
+	display:none;
+}
+
+}
+
+
+
+
+
+

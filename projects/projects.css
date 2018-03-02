@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css?family=OpenSans:300|Raleway:100,100i,200,200i,300,300i,400,400i");
+* {
+  box-sizing: border-box;
+  margin-top: 0px;
+  position: relative; }
+
+body, html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  background-color: #343434;
+  color: #505050;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url("../images/darktexture.png");
+  background-attachment: fixed; }
+
+
+
+main {
+  /*	background-color:#ff7a00;*/
+  width: 85%;
+  max-width:1400px;
+  margin:auto;
+
+  background-color:#fff;
+  overflow:hidden;
+}
+
+main img {
+  display:block;
+  width:100%;
+}
+
+
+main p {
+  padding:200px 15% 100px 15%;
+  margin:0;
+  line-height:1.2;
+  font-weight:100;
+}
+
+
+/* for discord logo */
+main p img {
+  max-width:75%;
+  margin-bottom:40px;
+}
+
+
+/* for discord gifs */
+.icons {
+  display:flex;
+  height:auto;
+
+  flex-wrap:wrap;
+
+  justify-content: space-around;
+
+  margin-bottom: 40px;
+
+}
+
+.icons img {
+  width:auto;
+
+  align-self:center;
+}
+
+
+video {
+  width:100%;
+  box-shadow: 0px 0px 30px #9b9b9b;
+  margin-bottom:50px;
+}
+
+
+
+
+/* box that links to live site */
+.livesite {
+  width:100%;
+  height:auto;
+  margin:30px 0px;
+  padding:30px;
+  color:white;
+
+  font-weight:500;
+
+  text-align:center;
+  font-size:30px;
+}
+
+
+a {
+  position: relative;
+  color: #a3a3a3;
+  text-decoration: none;
+  padding: 0;
+  transition: all .3s ease .05s; }
+
+.livesite:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  transform: scaleX(0);
+  transform-origin: 0% 0%;
+  transition: all 0.3s ease-in-out 0s; }
+
+.livesite:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1); }
+
+
+
+
+
+
+
+/* NAV CSS */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  background-color: #343434;
+  text-align: left;
+  font-family: 'Raleway';
+  font-weight: 300;
+  font-size: 24px;
+  text-transform: lowercase; }
+
+nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px; }
+
+nav li {
+  display: inline-block;
+  padding: 15px 25px;
+  text-align: left; }
+
+nav a {
+  position: relative;
+  color: #a3a3a3;
+  text-decoration: none;
+  padding: 0;
+  transition: all .3s ease .05s; }
+
+nav a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #1e90ff;
+  visibility: hidden;
+  transform: scaleX(0);
+  transform-origin: 0% 0%;
+  transition: all 0.3s ease-in-out 0s; }
+
+nav a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1); }
+
+
+
+
+
+
+/* footer content */
+footer {
+  background-color: #f9f9f9;
+  background-image: url("../images/lighttexture.png");
+  height: auto;
+  padding: 30px 0px;
+ }
+
+footer .c-zone {
+  width:40%;
+  text-align:center;
+  font-size:12px;
+  line-height:1.0;
+}
+
+footer a {
+  position: relative;
+  color: #a3a3a3;
+  text-decoration: none;
+  transition: all .3s ease .05s;
+  line-height:1.2; }
+
+footer a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #1e90ff;
+  visibility: hidden;
+  transform: scaleX(0);
+  transform-origin: 0% 0%;
+  transition: all 0.3s ease-in-out 0s; }
+
+footer a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1); }
+
+
+
+
+/* ============ target all center/content zones */
+.c-zone {
+  position: relative;
+  width: 95%;
+  max-width: 1400px;
+  margin: 0px auto; }
+
+/* header, #about, and footer background patterns from Subtle Patterns! I'm incredibly grateful for wonderful artists who are willing to offer their patterns for the use of others! */

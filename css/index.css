@@ -248,7 +248,16 @@ header p {
   background-size: cover;
   background-position: center;
   margin: 10px;
-  /*	display:none;*/ }
+  /*	display:none;*/
+
+  cursor:pointer; }
+
+ a {
+    text-decoration:none;
+    color:inherit;
+    font-size:inherit;
+    font-family:inherit;
+  }
 
 .iname {
   position: absolute;

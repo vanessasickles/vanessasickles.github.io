@@ -1,0 +1,51 @@
+/* Inbetween */
+
+@media only screen and (max-width:1080px) {
+
+
+	footer .c-zone {
+		font-size:16px;
+	}
+
+
+}
+
+
+
+/* iPad responsive */
+@media only screen and (max-width:768px) {
+	
+	main {
+		width:100%;
+	}
+
+	footer .c-zone {
+		text-align:left;
+		width:85%;
+		font-size:20px;
+	}
+
+
+}
+
+
+
+
+/* Phone responsive */
+@media only screen and (max-width:450px) {
+
+	main {
+		width:100%;
+	}
+
+	footer .c-zone {
+		text-align:left;
+		width:85%;
+		font-size:24px;
+	}
+}
+
+
+
+
+
