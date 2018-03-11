@@ -1,25 +1,6 @@
 
-var controller = new ScrollMagic.Controller();
-new ScrollMagic.Scene({triggerElement:'#intro'}).setClassToggle("nav ul li:nth-child(1)","lipart").addTo(controller);
-
-
-
-
-
-/* THINGS TO ASK JON ABOUT
-
-- scrollmagic thing above
-- lower load times? what's the best way to optimize images/js?
-
-- cleaner code? any way to organize code to look better to employers?
-
-*/
-
-
-
-
-
-
+// var controller = new ScrollMagic.Controller();
+// new ScrollMagic.Scene({triggerElement:'#intro'}).setClassToggle("nav ul li:nth-child(1)","lipart").addTo(controller);
 
 
 // ON-LOAD  FUNCTIONS
