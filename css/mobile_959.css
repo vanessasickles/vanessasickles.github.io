@@ -116,11 +116,7 @@
 
 
 
-
-
-
-/* Phone responsive */
-@media only screen and (max-width:450px) {
+@media only screen and (max-width:650px) {
 	header {
 		width:100%;
 		height:90%;
@@ -206,18 +202,17 @@
 		font-size:25px;
 	}
 
-
+	#overfishing {
+		background-image:url('../images/overfishingpreview.png');
+		background-size:cover;
+		background-position:center;
+	}
 
 	.discord {
 		background-image:url('../images/discordpreview.png');
 		background-position:left;
 	}
 
-	#overfishing {
-		background-image:url('../images/overfishingpreview.png');
-		background-size:cover;
-		background-position:center;
-	}
 
 	footer .c-zone {
 		text-align:left;

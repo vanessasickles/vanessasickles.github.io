@@ -1,6 +1,6 @@
 
-// var controller = new ScrollMagic.Controller();
-// new ScrollMagic.Scene({triggerElement:'#intro'}).setClassToggle("nav ul li:nth-child(1)","lipart").addTo(controller);
+var controller = new ScrollMagic.Controller();
+new ScrollMagic.Scene({triggerElement:'#intro'}).setClassToggle("nav ul li:nth-child(1)","lipart").addTo(controller);
 
 
 
@@ -37,17 +37,19 @@ $(document).ready(function() {
 	$("#intro p:nth-child(3)").addClass("swipeinleft").css({"animation-delay":".75s"})
 });
 
-if ($(window).width() < 450) {
-	document.getElementById("overfishing").innerHTML = " ";
-}
 
-$(window).resize(function(){
-	if ($(window).width() < 450) {
-	document.getElementById("overfishing").innerHTML = " ";
-}
-	else(
-		document.getElementById("overfishing").innerHTML = '<video autoplay loop="true"><source src="images/overfishingpreview.mp4" type="video/mp4"></video>')
-})
+
+// if ($(window).width() < 450) {
+// 	document.getElementById("overfishing").innerHTML = " ";
+// }
+
+// $(window).resize(function(){
+// 	if ($(window).width() < 450) {
+// 	$("#overfishing").innerHTML = " ";
+// }
+// 	else(
+// 		$("#overfishing").innerHTML = '<video autoplay loop="true"><source src="images/overfishingpreview.mp4" type="video/mp4"></video>')
+// })
 
 
 
@@ -61,37 +63,41 @@ $("nav a").click(function(){
 
 
 // HOVER ANIMATIONS
-if ($(window).width() > 768) {
-	$(".item").hover(
-		function(){
-			$(this).find(".iname").css({"padding-left": "150px"});},
 
-		function(){
-			$(this).find(".iname").css({"padding-left":"20px"});}
-		);
-	}
+$('.item').on('mouseenter',enterme);
+$('.item').on('mouseleave',leaveme);
+
+function enterme(event){
+	$(event.currentTarget).find(".iname").css({"padding-left": "150px"})
+}
+
+function leaveme(event){
+	$(event.currentTarget).find(".iname").css({"padding-left": "20px"})
+}
+
 
 $(window).resize(function() {
-	if ($(window).width() > 768) {
-	$(".item").hover(
-		function(){
-			$(this).find(".iname").css({"padding-left": "150px"});},
-
-		function(){
-			$(this).find(".iname").css({"padding-left":"20px"});}
-		);
+	if ($(window).width() < 650) {
+		$("#overfishing video").remove();
 	}
+
+	else {
+		$("#overfishing").html('<video autoplay loop="true"><source src="images/overfishingpreview.mp4" type="video/mp4"></video>');
+	}
+
+	if ($(window).width() > 768) {
+		$('.item').on('mouseenter',enterme);
+		$('.item').on('mouseleave',leaveme);
+	}
+
+	else {
+		$('.item').off('mouseenter',enterme);
+		$('.item').off('mouseleave',leaveme);
+	}
+
 })
 
-
-
-$(".hero").hover(
-	function(){
-		$(this).find(".latest").css({"padding-left": "150px"});},
-
-	function(){
-		$(this).find(".latest").css({"padding-left":"40px"});}
-	);
+$(window).resize()
 
 	
 
