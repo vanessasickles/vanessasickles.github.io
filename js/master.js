@@ -19,27 +19,10 @@ $(document).ready(function() {
 });
 
 
-
-// if ($(window).width() < 450) {
-// 	document.getElementById("overfishing").innerHTML = " ";
-// }
-
-// $(window).resize(function(){
-// 	if ($(window).width() < 450) {
-// 	$("#overfishing").innerHTML = " ";
-// }
-// 	else(
-// 		$("#overfishing").innerHTML = '<video autoplay loop="true"><source src="images/overfishingpreview.mp4" type="video/mp4"></video>')
-// })
-
-
-
-
 // Scroll-tos, for your convenience!
 $("nav a").click(function(){
 	$(window).scrollTo(this.hash,750,{offset:-58, easing:'swing'})
 });
-
 
 
 
@@ -79,8 +62,6 @@ $(window).resize(function() {
 })
 
 $(window).resize()
-
-	
 
 // Gallery filtering buttons
 $(".show_all").click(function(){ // test to see if it's already selected. if not, select it; if so, do nothing. Keeps selected button from flashing when it's clicked while already selected

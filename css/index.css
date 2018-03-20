@@ -359,6 +359,65 @@ footer a:hover:before {
 
 
 
+/* ============ form css */
+
+form,input,textarea,label,footer button {
+  display:block;
+  text-align:left;
+  font-family: 'Raleway';
+}
+
+footer input[type=submit] {
+  display:inline-block;
+  padding:5px 15px 5px 10px;
+  background-color:#343434;
+  margin-top:15px;
+
+  width:auto;
+  cursor:pointer;
+
+  color:#fff;
+  font-size:15px;
+  letter-spacing: .5px;
+  font-family: 'Raleway';
+  text-transform:lowercase;
+
+  border:none;
+  text-decoration:none;
+}
+
+form {
+  margin-bottom:30px;
+}
+
+label {
+  margin-top:20px;
+  margin-bottom:5px;
+
+  font-family: 'Raleway';
+  font-weight:bold;
+  text-transform:lowercase;
+  font-size:18px;
+  color:#343434;
+}
+
+input {
+  width:45%;
+}
+
+input,textarea {
+  padding:5px;
+}
+
+input[type=text]:focus {
+  border: 1px solid #1e90ff;
+}
+
+textarea {
+  width:100%;
+  height:150px;
+}
+
 
 /* ============ target all center/content zones */
 .c-zone {
