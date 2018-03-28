@@ -27,6 +27,15 @@ main {
   top: 0;
   bottom: 0; }
 
+  h1 {
+  text-transform: lowercase;
+  font-family: 'Raleway';
+  font-weight: 300;
+  line-height: 1.0;
+  color: #1e90ff;
+  font-style: normal;
+  margin: 0;
+}
 
 
 
@@ -80,10 +89,16 @@ nav a:hover:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1); }
 
-.lipart {
-  transition: all .5s ease;
-  padding-right: 560px; }
+  nav h1 {
+    font-size:36px;
+    display:none;
+    transition: all .3s ease .05s;
+  }
 
+  .showname {
+    display:inline-block;
+    transition: all .3s ease .05s;
+  }
 
 
 
@@ -105,15 +120,9 @@ header {
   font-size: 30px;
   color: #a3a3a3; }
 
+
 header h1 {
-  text-transform: lowercase;
-  font-family: 'Raleway';
-  font-weight: 300;
-  line-height: 1.0;
-  color: #1e90ff;
   font-size: 100px;
-  font-style: normal;
-  margin: 0;
   margin-bottom: 15px; }
 
 header p {
