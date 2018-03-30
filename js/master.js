@@ -15,10 +15,7 @@ $(document).ready(function() {
 });
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> cbc73999a9b0ba5ae4a8b7eaf4f7234d5147c3ee
 // Scroll-tos, for your convenience!
 $("nav a").click(function(){
 	$(window).scrollTo(this.hash,750,{offset:-58, easing:'swing'})
@@ -26,8 +23,6 @@ $("nav a").click(function(){
 
 
 
-<<<<<<< HEAD
-=======
 // nav effect
 var controller = new ScrollMagic.Controller();
 new ScrollMagic.Scene({triggerElement:'.s3'}).setClassToggle("nav h1","showname").addTo(controller);
@@ -35,7 +30,6 @@ new ScrollMagic.Scene({triggerElement:'.s3'}).setClassToggle("nav h1","showname"
 
 
 
->>>>>>> cbc73999a9b0ba5ae4a8b7eaf4f7234d5147c3ee
 // HOVER ANIMATIONS
 
 $('.item').on('mouseenter',enterme);
@@ -73,20 +67,7 @@ $(window).resize(function() {
 
 $(window).resize()
 
-<<<<<<< HEAD
-// Gallery filtering buttons
-$(".show_all").click(function(){ // test to see if it's already selected. if not, select it; if so, do nothing. Keeps selected button from flashing when it's clicked while already selected
-	if (!$(this).hasClass("activated")) { 
-		$(".button").removeClass("activated") 
-		$(this).addClass("activated") 
-	} 
-	else {false}
 
-	$(".item").show() // show all items
-});
-=======
-
->>>>>>> cbc73999a9b0ba5ae4a8b7eaf4f7234d5147c3ee
 
 
 // Gallery filtering buttons
