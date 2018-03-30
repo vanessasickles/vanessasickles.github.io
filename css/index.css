@@ -152,7 +152,8 @@ header p {
   font-size: 20px; }
 
 #about .c-zone {
-  width: 60%; }
+  width: 60%;
+  display:hide; }
 
 #about p {
   font-weight:300;
@@ -366,9 +367,6 @@ footer a:hover:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1); }
 
-
-
-
 /* ============ target all center/content zones */
 .c-zone {
   position: relative;
@@ -377,6 +375,7 @@ footer a:hover:before {
   margin: 0px auto; }
 
 /* ============ ANIMATIONS =================== */
+
 /* Latest Project Swipein */
 @keyframes swipeinleft {
   0% {
@@ -389,7 +388,8 @@ footer a:hover:before {
   animation-duration: 1s;
   animation-iteration-count: 1;
   animation-delay: .25s;
-  animation-fill-mode: backwards; }
+  animation-fill-mode: both;
+  display:block !important; }
 
 /* nav swipein */
 @keyframes swipeintop {

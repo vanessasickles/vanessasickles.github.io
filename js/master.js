@@ -25,9 +25,7 @@ $("nav a").click(function(){
 
 // nav effect
 var controller = new ScrollMagic.Controller();
-new ScrollMagic.Scene({triggerElement:'.s3'}).setClassToggle("nav h1","showname").addTo(controller);
-
-
+new ScrollMagic.Scene({triggerElement:'.s3',}).setClassToggle("nav h1","showname").addTo(controller);
 
 
 // HOVER ANIMATIONS
