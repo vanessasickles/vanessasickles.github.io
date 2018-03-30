@@ -1,8 +1,4 @@
 
-// var controller = new ScrollMagic.Controller();
-// new ScrollMagic.Scene({triggerElement:'#intro'}).setClassToggle("nav ul li:nth-child(1)","lipart").addTo(controller);
-
-
 // ON-LOAD  FUNCTIONS
 $(document).ready(function() {
 	// select "all" at load
@@ -19,6 +15,10 @@ $(document).ready(function() {
 });
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> cbc73999a9b0ba5ae4a8b7eaf4f7234d5147c3ee
 // Scroll-tos, for your convenience!
 $("nav a").click(function(){
 	$(window).scrollTo(this.hash,750,{offset:-58, easing:'swing'})
@@ -26,6 +26,16 @@ $("nav a").click(function(){
 
 
 
+<<<<<<< HEAD
+=======
+// nav effect
+var controller = new ScrollMagic.Controller();
+new ScrollMagic.Scene({triggerElement:'.s3'}).setClassToggle("nav h1","showname").addTo(controller);
+
+
+
+
+>>>>>>> cbc73999a9b0ba5ae4a8b7eaf4f7234d5147c3ee
 // HOVER ANIMATIONS
 
 $('.item').on('mouseenter',enterme);
@@ -63,6 +73,7 @@ $(window).resize(function() {
 
 $(window).resize()
 
+<<<<<<< HEAD
 // Gallery filtering buttons
 $(".show_all").click(function(){ // test to see if it's already selected. if not, select it; if so, do nothing. Keeps selected button from flashing when it's clicked while already selected
 	if (!$(this).hasClass("activated")) { 
@@ -73,36 +84,26 @@ $(".show_all").click(function(){ // test to see if it's already selected. if not
 
 	$(".item").show() // show all items
 });
+=======
 
-$(".show_interactive").click(function(){
-	if (!$(this).hasClass("activated")) {
-		$(".button").removeClass("activated")
-		$(this).addClass("activated")
-	} 
-	else {false}
-	$(".item").hide()
-	$(".item.interactive").show()
-});
+>>>>>>> cbc73999a9b0ba5ae4a8b7eaf4f7234d5147c3ee
 
-$(".show_branding").click(function(){
-	if (!$(this).hasClass("activated")) {
-		$(".button").removeClass("activated")
-		$(this).addClass("activated")
-	} 
-	else {false}
-	$(".item").hide()
-	$(".item.branding").show()
-});
 
-$(".show_animation").click(function(){
-	if (!$(this).hasClass("activated")) {
-		$(".button").removeClass("activated")
-		$(this).addClass("activated")
-	} 
-	else {false}
-	$(".item").hide()
-	$(".item.animation").show()
-});
+// Gallery filtering buttons
+var button = $(".button")
+button.click(function(){
+	var clicked = $(this).attr("class").split("_")[1]; // find & store which "show_" button was clicked
+	button.removeClass('activated');
+	$(this).addClass('activated');
+	if (clicked == "all") {
+		$(".item").show();
+	}
+
+	else {
+		$(".item").hide();
+		$("." + clicked).show(); // use which was clicked to define which items to show
+	}
+})
 
 
 // Gallery item box click
