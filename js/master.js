@@ -4,14 +4,17 @@ $(document).ready(function() {
 	// select "all" at load
 	$(".show_all").addClass("activated") 
 
+
 	// on load animations
 	$("nav").addClass("swipeintop")
-	$(".latest").addClass("swipeinleft")
-	$(".hero").addClass("fadein")
-	$(".gallery").addClass("fadein")
-	$("#intro p:nth-child(1)").addClass("swipeinleft").css({"animation-delay":".25s"})
-	$("#intro h1").addClass("swipeinleft").css({"animation-delay":".5s"})
-	$("#intro p:nth-child(3)").addClass("swipeinleft").css({"animation-delay":".75s"})
+	// $(".hero").css({"opacity":"0"})
+
+	// $(".latest").addClass("swipeinleft")
+	// $(".hero").addClass("fadein")
+	// $(".gallery").addClass("fadein")
+	// $("#intro p:nth-child(1)").addClass("swipeinleft").css({"animation-delay":".25s"})
+	// $("#intro h1").addClass("swipeinleft").css({"animation-delay":".5s"})
+	// $("#intro p:nth-child(3)").addClass("swipeinleft").css({"animation-delay":".75s"})
 });
 
 
@@ -23,9 +26,50 @@ $("nav a").click(function(){
 
 
 
+
 // nav effect
 var controller = new ScrollMagic.Controller();
-new ScrollMagic.Scene({triggerElement:'.s3',}).setClassToggle("nav h1","showname").addTo(controller);
+var navScene = new ScrollMagic.Scene({triggerElement:'#about',}).setClassToggle("nav h1","showname").addTo(controller);
+navScene.triggerHook(0.0);
+
+
+
+// hero fade-in and latest sweep
+var tlHero = new TimelineMax();
+tlHero.add(TweenMax.from(".hero",1.5, {
+	"opacity":0
+}))
+
+tlHero.add(TweenMax.from(".latest",.25, {
+	"left":"-=400px"
+}))
+
+var sceneHero = new ScrollMagic.Scene({
+		triggerElement:'.hero',
+		triggerHook:0.7,
+	})
+	.setTween(tlHero);
+
+sceneHero.addTo(controller);
+
+
+
+// gallery item fade-ins
+
+var tlGallery = new TimelineMax();
+
+tlGallery.add(TweenMax.staggerFrom(".item", 2, {
+	opacity:0, delay:.5, ease: Power2.easeOut},0.2));
+
+var sceneGallery = new ScrollMagic.Scene({
+		triggerElement: ".gallery",
+		triggerHook:0.9
+	})
+
+	.setTween(tlGallery);
+
+sceneGallery.addTo(controller);
+
 
 
 // HOVER ANIMATIONS

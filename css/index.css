@@ -19,13 +19,6 @@ body {
 
 
 
-main {
-  /*	background-color:#ff7a00;*/
-  width: 100%;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0; }
 
   h1 {
   text-transform: lowercase;
@@ -224,7 +217,7 @@ header p {
 
 /* the work itself + filtering buttons */
 #work {
-  padding-top: 40px;
+  padding-top: 100px;
   /*padding-bottom:40px;*/
   min-height: 1000px;
   box-shadow: 0px -2px 50px 1px #303030; }
@@ -237,6 +230,34 @@ header p {
 #work .c-zone h2 {
   display:none;
 }
+
+#work .button {
+  position: relative;
+  color: #a3a3a3;
+  text-decoration: none;
+  transition: all .3s ease .05s;
+  line-height:1.2; }
+
+#work .button:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #1e90ff;
+  visibility: hidden;
+  transform: scaleX(0);
+  transform-origin: 0% 0%;
+  transition: all 0.3s ease-in-out 0s; }
+
+#work .button:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1); }
+
+
+
 
 /* actual gallery */
 
@@ -307,13 +328,10 @@ header p {
   text-transform: capitalize;
   letter-spacing: 1px;
   cursor: pointer;
-  color: #a3a3a3; }
+  color: #a3a3a3;
+  font-size:20px; }
 
-.button:hover {
-  color: #8d8d8d;
-  transition: ease .20s; }
-
-.activated {
+#work .activated {
   background-color: #1e90ff;
   color: #fff; }
 
@@ -414,7 +432,8 @@ footer a:hover:before {
 .fadein {
   animation-name: fadein;
   animation-duration: 1.5s;
-  animation-iteration-count: 1; }
+  animation-iteration-count: 1;
+  animation-fill-mode:forwards; }
 
 /* topic hover */
 .latest:hover {
