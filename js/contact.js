@@ -12,6 +12,9 @@ $(function() {
 		type: 'POST',
 		url: $(form).attr('action'),
 		data: formData
+		success: function(r) 
+  {
+    window.location = 'new.php';},
 	}).done(function(response) {
 		$(formMessages).removeclass('error');
 		$(formMessages).addClass('success');

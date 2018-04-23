@@ -350,7 +350,7 @@ form {
   text-align:left;
 }
 
-label, input {
+label, input[type="text"] {
   display:block;
   width:100%;
 }
