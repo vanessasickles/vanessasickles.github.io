@@ -126,6 +126,26 @@
 
 	<footer>
 		<div class="c-zone">
+
+			<div class="contactform">
+				<form action="contact.php" method="post" id="contactform">
+					<div class="formgroup">
+						<div class="fieldgroup">
+						<label for="yourname">Name</label>
+						<input type="text" id="name" name="yourname" placeholder="Your first and last name" required/></div>
+
+						<div class="fieldgroup"><label for="callback">Preferred Contact</label>
+						<input type="text" id="callback" name="callback" placeholder="Your preferred method of contact" required/></div>
+					</div>
+
+					<label for="message">What's up?</label>
+					<textarea name="message" id="message" name="message" placeholder="What's on your mind?" required></textarea>
+
+					<input type="submit" value="Submit"/>
+
+				</form>
+				</div>
+
 			Questions?<br>
 			<b>Get in touch at:</b> <a href="">Behance</a> • <a href="">LinkedIn</a><br>
 		© 2018 Vanessa Sickles •  <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a></p>
@@ -150,6 +170,7 @@
 
 
 	<script type="text/javascript" src="js/master.js"></script>
+	<script type="text/javascript" src="js/contact.js"></script>
 </body>
 
 </html>
