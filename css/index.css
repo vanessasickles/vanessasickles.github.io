@@ -184,7 +184,7 @@ header p {
   background-color: #373737;
   height: 500px;
   width: 100%;
-  background-image: url(../images/circleoflightpreview.png);
+  background-image: url(../images/capstone.png);
   background-size: cover;
   background-position: center; }
 
@@ -218,8 +218,7 @@ header p {
 /* the work itself + filtering buttons */
 #work {
   padding-top: 100px;
-  /*padding-bottom:40px;*/
-  min-height: 1000px;
+  padding-bottom:40px;
   box-shadow: 0px -2px 50px 1px #303030; }
 
 #work .c-zone {
