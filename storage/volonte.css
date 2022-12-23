@@ -1,21 +1,116 @@
+.post_content {
+    width: 805px;
+    margin: auto;
+}
+
 :root {
-    --primary: #ffb340;
+    --primary: #f8a72b;
     --black: #323232;
     --gray: #696969;
+    --light-gray: #ababab;
 }
 
 .group-page {
-    background-color: #fff;
-    width: 75%;
-    box-shadow: 1px 1px 3px #000;
+    background-color: white;
+    width: 100%;
+    box-shadow: 1px 1px 5px var(--light-gray);
+    font-family: Raleway;
+    margin: auto;
+    border: 10px solid var(--primary);
+    border-left: 0;
+    border-right: 0;
+    font-size: 16px;
+}
+
+.group-page,
+.group-page * {
+    box-sizing: border-box;
+}
+
+.group-banner {
+    padding: 4rem 2rem;
+    background-image: url('https://i.ibb.co/C6XMJkK/vytas-i-NKo-FKj-NNY-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.group-banner::before {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--black);
+    opacity: 0.5;
+    content: '';
+}
+
+.group-page h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    text-align: center;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    z-index: 2;
+    position: relative;
+    text-shadow: 1px 1px 5px var(--black);
+}
+
+.group-page .subtitle {
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+section.content {
+    background-color: white;
+    color: var(--black);
+    padding: 1rem 3rem;
     font-family: Raleway;
 }
 
-h2 {
+section.ranks {
+    padding: 2rem 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.ranks p {
+    margin-top: 3rem;
+    font-style: italic;
+}
+
+.group-page .rank {
+    flex-basis: 40%;
+}
+
+.group-page h3 {
     background-color: var(--primary);
+    color: white;
+    font-weight: 600;
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    display: block;
     font-size: 20px;
 }
 
-.subtitle {
-    color: var(--gray);
+.group-page h4 {
+    margin: 0 0 0.25rem 0;
+    font-size: 18px;
+}
+
+.group-page ol {
+    margin: 1rem  0;
+    padding-left: 1rem;
+}
+
+.group-page li {
+    margin-bottom: 0.5rem;
 }
