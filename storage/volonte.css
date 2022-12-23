@@ -1,0 +1,21 @@
+:root {
+    --primary: #ffb340;
+    --black: #323232;
+    --gray: #696969;
+}
+
+.group-page {
+    background-color: #fff;
+    width: 75%;
+    box-shadow: 1px 1px 3px #000;
+    font-family: Raleway;
+}
+
+h2 {
+    background-color: var(--primary);
+    font-size: 20px;
+}
+
+.subtitle {
+    color: var(--gray);
+}
