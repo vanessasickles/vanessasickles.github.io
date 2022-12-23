@@ -2,6 +2,14 @@
     display: none;
 }
 
+.post_content .group-page section {
+    text-transform: none;
+    text-align: left;
+    font-weight: 500;
+    background-color: #fff;
+    border: 0;
+}
+
 :root {
     --primary: #f8a72b;
     --black: #323232;
