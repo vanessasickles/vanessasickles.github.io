@@ -1,6 +1,5 @@
-.post_content {
-    width: 805px;
-    margin: auto;
+.post_content .group-page br {
+    display: none;
 }
 
 :root {
@@ -25,6 +24,7 @@
 .group-page,
 .group-page * {
     box-sizing: border-box;
+    text-transform: none;
 }
 
 .group-banner {
